@@ -1,142 +1,73 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import { IoIosMail } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
-export default function Contact() {
+
+const ContactMe = () => {
     return (
-        <div className="relative flex items-top justify-center min-h-[700px] bg-white sm:items-center sm:pt-0">
-            <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div className="mt-8 overflow-hidden">
-                    <div className="grid grid-cols-1 md:grid-cols-2">
-                        <div className="p-6 mr-2 bg-gray-100 sm:rounded-lg">
-                            <h1 className="text-3xl sm:text-4xl text-gray-800 font-extrabold tracking-tight">
-                                Get in touch: 
-                            </h1>
-                            <p className="text-normal text-lg sm:text-xl font-medium text-gray-600 mt-2">
-                                Fill in the form to start a conversation
-                            </p>
-
-                            <div className="flex items-center mt-8 text-gray-600">
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="1.5"
-                                    viewBox="0 0 24 24"
-                                    className="w-8 h-8 text-gray-500"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.5"
-                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                                    />
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.5"
-                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                                    />
-                                </svg>
-                                <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    Acme Inc, Street, State, Postal Code
+        <div id='ContactMe' className='md:py-40 pb-[4rem] pt-[2rem] py-0 dark:bg-[#23304c]'>
+            <div className='max-w-5xl mx-auto mt-5 flex justify-center items-center flex-col px-[2.5rem]'>
+                <h2 className="text-2xl text-center dark:text-white">Contact Me</h2>
+                <span className="block text-sm mb-[3rem] md:mb-[4rem] text-center dark:text-white">Want to connect? My inbox is always open!</span>
+                
+                <div className='grid gap-8 row-gap-5 md:grid-cols-2 lg:grid-cols-3 w-full'>
+                    <div className='relative  p-px overflow-hidden transition duration-300 transform border dark:border-[#23304c] rounded shadow-md hover:scale-105 group hover:shadow-xl dark:shadow-blue-600/50'>
+                        <NavLink to='mailto:siddharth27.roy27@gmail.com'>
+                            <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-blue-600 group-hover:scale-x-100"></div>
+                            <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-blue-600 group-hover:scale-y-100"></div>
+                            <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-blue-600 group-hover:scale-x-100"></div>
+                            <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-blue-600 group-hover:scale-y-100"></div>
+                            <div className='relative p-5 dark:bg-[#23304c] bg-white rounded-sm'>
+                                <div className='flex flex-col items-center  mb-2 lg:flex-row'>
+                                    <div className='flex items-center justify-center w-16 h-16 mb-4 mr-2 rounded-full dark:bg-[#23304c] bg-indigo-50 lg:mb-0 text-blue-600 text-4xl'>
+                                        <IoIosMail/>
+                                    </div>
+                                    <h6 className = 'font-semibold leading-5 dark:text-white'>Email</h6>
                                 </div>
+                                <p className="mb-2 text-sm text-gray-900 text-center lg:text-start dark:text-white">Let's get in touch.</p>
                             </div>
-
-                            <div className="flex items-center mt-4 text-gray-600">
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="1.5"
-                                    viewBox="0 0 24 24"
-                                    className="w-8 h-8 text-gray-500"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.5"
-                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                                    />
-                                </svg>
-                                <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    +44 1234567890
+                        </NavLink>
+                    </div>
+                    <div className='relative  p-px overflow-hidden transition duration-300 transform border dark:border-[#23304c] rounded shadow-md hover:scale-105 group hover:shadow-xl dark:shadow-blue-600/50'>
+                    <NavLink to='https://github.com/Siddharth27Roy'>
+                            <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-blue-600 group-hover:scale-x-100"></div>
+                            <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-blue-600 group-hover:scale-y-100"></div>
+                            <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-blue-600 group-hover:scale-x-100"></div>
+                            <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-blue-600 group-hover:scale-y-100"></div>
+                            <div className='relative p-5 dark:bg-[#23304c] bg-white rounded-sm'>
+                                <div className='flex flex-col items-center  mb-2 lg:flex-row'>
+                                    <div className='flex items-center justify-center w-16 h-16 mb-4 mr-2 rounded-full dark:bg-[#23304c] bg-indigo-50 lg:mb-0 text-blue-600 text-4xl'>
+                                        <FaGithub />
+                                    </div>
+                                    <h6 className = 'font-semibold leading-5 dark:text-white'>GitHub</h6>
                                 </div>
+                                <p class="mb-2 text-sm text-gray-900 text-center lg:text-start dark:text-white">Check out my repositories.</p>
                             </div>
-
-                            <div className="flex items-center mt-2 text-gray-600">
-                                <svg
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="1.5"
-                                    viewBox="0 0 24 24"
-                                    className="w-8 h-8 text-gray-500"
-                                >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.5"
-                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                                    />
-                                </svg>
-                                <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    info@acme.org
+                        </NavLink>
+                    </div>
+                    <div className='relative  p-px overflow-hidden transition duration-300 transform border dark:border-[#23304c] rounded shadow-md hover:scale-105 group hover:shadow-xl dark:shadow-blue-600/50'>
+                    <NavLink to='https://www.linkedin.com/in/siddharth-roy-264224241/'>
+                            <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-blue-600 group-hover:scale-x-100"></div>
+                            <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-blue-600 group-hover:scale-y-100"></div>
+                            <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-blue-600 group-hover:scale-x-100"></div>
+                            <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-blue-600 group-hover:scale-y-100"></div>
+                            <div className='relative p-5 dark:bg-[#23304c] bg-white rounded-sm'>
+                                <div className='flex flex-col items-center  mb-2 lg:flex-row'>
+                                    <div className='flex items-center justify-center w-16 h-16 mb-4 mr-2 rounded-full dark:bg-[#23304c] bg-indigo-50 lg:mb-0 text-blue-600 text-4xl'>
+                                        <FaLinkedin />
+                                    </div>
+                                    <h6 className = 'font-semibold leading-5 dark:text-white'>LinkedIn</h6>
                                 </div>
+                                <p class="mb-2 text-sm text-gray-900 text-center lg:text-start dark:text-white">Let's connect.</p>
                             </div>
-                        </div>
-
-                        <form className="p-6 flex flex-col justify-center">
-                            <div className="flex flex-col">
-                                <label for="name" className="hidden">
-                                    Full Name
-                                </label>
-                                <input
-                                    type="name"
-                                    name="name"
-                                    id="name"
-                                    placeholder="Full Name"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
-                                />
-                            </div>
-
-                            <div className="flex flex-col mt-2">
-                                <label for="email" className="hidden">
-                                    Email
-                                </label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    placeholder="Email"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
-                                />
-                            </div>
-
-                            <div className="flex flex-col mt-2">
-                                <label for="tel" className="hidden">
-                                    Number
-                                </label>
-                                <input
-                                    type="tel"
-                                    name="tel"
-                                    id="tel"
-                                    placeholder="Telephone Number"
-                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
-                                />
-                            </div>
-
-                            <button
-                                type="submit"
-                                className="md:w-32 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"
-                            >
-                                Submit
-                            </button>
-                        </form>
+                        </NavLink>
                     </div>
                 </div>
             </div>
         </div>
-    );
+    )
 }
+
+export default ContactMe
