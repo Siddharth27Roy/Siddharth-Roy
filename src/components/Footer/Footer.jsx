@@ -24,7 +24,7 @@ const Footer = () => {
                         </Link>
 
                         <Link to="/Contact"     >
-                            <p className='hover:text-orange-700 text-white'>Contact Me</p>
+                            <p className='hover:text-orange-700 text-white'>Contact</p>
                         </Link>
                     </div> 
 

@@ -36,7 +36,7 @@ const Header = ({modeHandler, theme}) => {
                             
                             <li className="nav_item">
                                 <NavLink to="/" 
-                                className={({isActive}) =>`flex flex-col items-center text-[0.875rem] text-[#242329] dark:text-white font-medium hover:text-orange-700 dark:hover:text-orange-700 cursor-pointer ${isActive ? "text-orange-700 dark:text-orange-700" : "text-gray-700"}`} onClick={changeToggleHandler} >
+                                className={({isActive}) =>`flex flex-col items-center text-[0.875rem] text-[#242329] dark:text-white font-medium hover:text-orange-700 dark:hover:text-orange-700 cursor-pointer ${isActive ? "text-orange-700 dark:text-orange-500" : "text-gray-700"}`} onClick={changeToggleHandler} >
                                     <LuHome className='text-[1.2rem] md:hidden'/>
                                     Home
                                 </NavLink>
@@ -44,7 +44,7 @@ const Header = ({modeHandler, theme}) => {
 
                             <li className="nav_item">
                                 <NavLink to="/About" 
-                                className={({isActive}) =>`flex flex-col items-center text-[0.875rem] text-[#242329] dark:text-white font-medium hover:text-orange-700 dark:hover:text-orange-700 cursor-pointer ${isActive ? "text-orange-700 dark:text-orange-700" : "text-gray-700"}`} onClick={changeToggleHandler}  >
+                                className={({isActive}) =>`flex flex-col items-center text-[0.875rem] text-[#242329] dark:text-white font-medium hover:text-orange-700 dark:hover:text-orange-700 cursor-pointer ${isActive ? "text-orange-700 dark:text-orange-500" : "text-gray-700"}`} onClick={changeToggleHandler}  >
                                     <FaRegUser className='text-[1.2rem] md:hidden'/>
                                     About
                                 </NavLink>
@@ -52,22 +52,22 @@ const Header = ({modeHandler, theme}) => {
 
                             <li className="nav_item">
                                 <NavLink to="/Skills"  
-                                className={({isActive}) =>`flex flex-col items-center text-[0.875rem] text-[#242329] dark:text-white font-medium hover:text-orange-700 dark:text-orange-700] cursor-pointer ${isActive ? "text-orange-700 dark:text-orange-700" : "text-gray-700"}`} onClick={changeToggleHandler}>
+                                className={({isActive}) =>`flex flex-col items-center text-[0.875rem] text-[#242329] dark:text-white font-medium hover:text-orange-700 dark:text-orange-700] cursor-pointer ${isActive ? "text-orange-700 dark:text-orange-500" : "text-gray-700"}`} onClick={changeToggleHandler}>
                                     <FaRegFileAlt className='text-[1.2rem] md:hidden'/>
                                     Skills
                                 </NavLink>
                             </li>
 
                             <li className="nav_item">
-                                <NavLink to="/Qualification" className={({isActive}) =>`flex flex-col items-center text-[0.875rem] text-[#242329] dark:text-white font-medium hover:text-orange-700 dark:hover:text-orange-700 cursor-pointer ${isActive ? "text-orange-700 dark:text-orange-700" : "text-gray-700"}`} onClick={changeToggleHandler}>
+                                <NavLink to="/Qualification" className={({isActive}) =>`flex flex-col items-center text-[0.875rem] text-[#242329] dark:text-white font-medium hover:text-orange-700 dark:hover:text-orange-700 cursor-pointer ${isActive ? "text-orange-700 dark:text-orange-500" : "text-gray-700"}`} onClick={changeToggleHandler}>
                                     <LuGraduationCap className='text-[1.2rem] md:hidden'/>
-                                    Qualifications
+                                    Qualification
                                 </NavLink>
                             </li>
 
                             <li className="nav_item">
                                 <NavLink to="/Projects"  
-                                className={({isActive}) =>`flex flex-col items-center text-[0.875rem] text-[#242329] dark:text-white font-medium hover:text-orange-700] dark:hover:text-orange-700 cursor-pointer ${isActive ? "text-orange-700 dark:text-orange-700" : "text-gray-700"}`} onClick={changeToggleHandler}>
+                                className={({isActive}) =>`flex flex-col items-center text-[0.875rem] text-[#242329] dark:text-white font-medium hover:text-orange-700] dark:hover:text-orange-700 cursor-pointer ${isActive ? "text-orange-700 dark:text-orange-500" : "text-gray-700"}`} onClick={changeToggleHandler}>
                                     <SlPicture className='text-[1.2rem] md:hidden'/>
                                     Projects
                                 </NavLink>
@@ -75,7 +75,7 @@ const Header = ({modeHandler, theme}) => {
 
                             <li className="nav_item">
                                 <NavLink to="/Contact"  
-                                className={({isActive}) =>`flex flex-col items-center text-[0.875rem] text-[#242329] dark:text-white font-medium hover:text-orange-700 dark:hover:text-orange-700 cursor-pointer ${isActive ? "text-orange-700 dark:text-orange-700" : "text-gray-700"}`} onClick={changeToggleHandler}>
+                                className={({isActive}) =>`flex flex-col items-center text-[0.875rem] text-[#242329] dark:text-white font-medium hover:text-orange-700 dark:hover:text-orange-700 cursor-pointer ${isActive ? "text-orange-700 dark:text-orange-500" : "text-gray-700"}`} onClick={changeToggleHandler}>
                                     <LuSendHorizonal className='text-[1.2rem] md:hidden'/>
                                     Contact
                                 </NavLink>
