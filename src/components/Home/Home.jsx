@@ -12,7 +12,7 @@ const Home = () => {
                     
 
                     <div className='home_img w-[300px] h-[300px] bg-rose-400 rounded-full ' > 
-                        <img src="public\MyPhoto.jpeg" className='w-[300px] h-[300px] object-cover rounded-full' />
+                        <img src="/MyPhoto.jpeg" className='w-[300px] h-[300px] object-cover rounded-full' />
                     </div>
 
                     <div className="home_data sm:col-auto col-span-2">

@@ -8,7 +8,7 @@ export default function About() {
               <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12 lg:justify-center  ">
                   <div className="w-[300px]">
                       <img
-                          src="public\MyPhoto.jpeg"
+                          src="/MyPhoto.jpeg"
                           alt="image"
                           className='object-cover rounded-lg'
                       />
