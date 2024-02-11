@@ -16,7 +16,7 @@ const Home = () => {
                     </div>
 
                     <div className="home_data sm:col-auto col-span-2">
-                        <h1 className="home_title text-[2rem] mb-[.75rem] dark:text-white lg:text-4xl">Hi, I'm Siddharth Ro y</h1>
+                        <h1 className="home_title text-[2rem] mb-[.75rem] dark:text-white lg:text-4xl">Hi, I'm Siddharth Roy</h1>
 
                         <h3 className="home_subtitle text-[1.125rem] text-[#242329] font-medium mb-[.75rem] dark:text-[#bcbac4]">I'm a Full Stack Web Developer</h3>
 

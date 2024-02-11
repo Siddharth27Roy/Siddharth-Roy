@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+
 import { IoIosMail } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -14,7 +14,7 @@ const ContactMe = () => {
                 
                 <div className='grid gap-8 row-gap-5 md:grid-cols-2 lg:grid-cols-3 w-full'>
                     <div className='relative  p-px overflow-hidden transition duration-300 transform border dark:border-[#23304c] rounded shadow-md hover:scale-105 group hover:shadow-xl dark:shadow-blue-400/50'>
-                        <NavLink to='mailto:siddharth27.roy27@gmail.com'>
+                        <a href='mailto:siddharth27.roy27@gmail.com' target="_blank">
                             <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-blue-400 group-hover:scale-x-100"></div>
                             <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-blue-400 group-hover:scale-y-100"></div>
                             <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-blue-400 group-hover:scale-x-100"></div>
@@ -28,10 +28,10 @@ const ContactMe = () => {
                                 </div>
                                 <p className="mb-2 text-sm text-gray-900 text-center lg:text-start dark:text-white">Let's get in touch.</p>
                             </div>
-                        </NavLink>
+                        </a>
                     </div>
                     <div className='relative  p-px overflow-hidden transition duration-300 transform border dark:border-[#23304c] rounded shadow-md hover:scale-105 group hover:shadow-xl dark:shadow-blue-400/50'>
-                    <NavLink to='https://github.com/Siddharth27Roy'>
+                    <a href='https://github.com/Siddharth27Roy' target="_blank">
                             <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-blue-400 group-hover:scale-x-100"></div>
                             <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-blue-400 group-hover:scale-y-100"></div>
                             <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-blue-400 group-hover:scale-x-100"></div>
@@ -45,10 +45,10 @@ const ContactMe = () => {
                                 </div>
                                 <p class="mb-2 text-sm text-gray-900 text-center lg:text-start dark:text-white">Check out my repositories.</p>
                             </div>
-                        </NavLink>
+                        </a>
                     </div>
                     <div className='relative  p-px overflow-hidden transition duration-300 transform border dark:border-[#23304c] rounded shadow-md hover:scale-105 group hover:shadow-xl dark:shadow-blue-400/50'>
-                    <NavLink to='https://www.linkedin.com/in/siddharth-roy-264224241/'>
+                        <a href='https://www.linkedin.com/in/siddharth-roy-264224241/' target="_blank">
                             <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-blue-400 group-hover:scale-x-100"></div>
                             <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-blue-400 group-hover:scale-y-100"></div>
                             <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-blue-400 group-hover:scale-x-100"></div>
@@ -62,7 +62,7 @@ const ContactMe = () => {
                                 </div>
                                 <p class="mb-2 text-sm text-gray-900 text-center lg:text-start dark:text-white">Let's connect.</p>
                             </div>
-                        </NavLink>
+                        </a>
                     </div>
                 </div>
             </div>
