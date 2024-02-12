@@ -29,7 +29,7 @@ function Projects() {
         <div class="card__content">
           <p class="card__title">Portfolio Website</p>
           <p class="card__description">My personal portfolio website using React and Tailwind CSS, featuring a clean and minimal UI design. It uses React-Router-Dom for easy navigation.</p>
-          <a href="" target="_blank">
+          <a href="https://siddharth-roy.vercel.app/" target="_blank">
             <button class="card__button">Live Demo</button>
           </a>
           <a href="https://github.com/Siddharth27Roy/Siddharth-Roy" target="_blank">

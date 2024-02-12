@@ -1,5 +1,6 @@
 import React from 'react';
 import { GrNotes } from "react-icons/gr";
+import Resume from './Resume.pdf';
 
 export default function About() {
   return (
@@ -21,7 +22,7 @@ export default function About() {
                         Hello! I'm <span className='text-orange-600'>Siddharth Roy</span>, a engineering student in my final year, specializing in full-stack web development. I bring fresh perspectives, a solid engineering foundation, and a commitment to mastering the latest technologies. Eager to contribute my skills and creativity to a dynamic workplace, I am actively seeking opportunities for a rewarding career.
                       </p>
 
-                        <a href='#' /*download='#'*/ className='w-[120px] block'>
+                        <a href={Resume} download={Resume} className='w-[120px] block'>
                             <button className='flex justify-center items-center mt-4 bg-[#546fa8] hover:bg-blue-700 dark:bg-blue-900  dark:hover:bg-blue-700 text-white p-3 rounded-md font-medium w-[120px] gap-2 mx-auto md:mx-0'>
                                 Resume
                                 <GrNotes />
